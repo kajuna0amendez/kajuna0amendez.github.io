@@ -1,4 +1,4 @@
-# kajuna0amendez.NotesML
+# Notes in Machine Learning
 These are my attempts to write a series on the topic of ML. There are several important subjects  
 I want to cover and depeen given the new advances in the area:
 
