@@ -1,4 +1,6 @@
-# Notes in Machine Learning
+# Andres Mendez Vazquez
+He has participated in several projects for the USA Army, Mexican Air Force, Oracle MDC, IBM Mexico, and several startups. As a consultant in Machine Learning and Artificial Intelligence, his main task is to propose, design and develop algorithms for specific solutions to be implemented in final production code. Additionally, he is an associate research professor at Cinvestav Guadalajara where he leads a Machine Learning Research Group. He got his PhD in Computer Engineering doing Machine Learning at the University of Florida, USA.
+## Notes in Machine Learning
 These are my attempts to write a series on the topic of ML. There are several important subjects  
 I want to cover and depeen given the new advances in the area:
 
@@ -14,7 +16,7 @@ I want to cover and depeen given the new advances in the area:
   + Batch Gradiente Descent
   + Accelerating Gradient Descent
   + Stochastic Gradient Descent
-  + Regret in M
+  + Regret in ML
 5. Logistic Regression 
   + Interlude with Generative vs Discriminative models
   + The Logistic Regresion model
@@ -34,7 +36,10 @@ I want to cover and depeen given the new advances in the area:
 8. Maximum a Posteriori Methods
   + The general case
   + Expectation Maximization Algorithm
-  
+
+## Notes in Deep Learning
+## Notes in Artificial Intelligence
+## Software generated for Artificial Intelligence
 UNDER CONSTRUCTION
   
  
