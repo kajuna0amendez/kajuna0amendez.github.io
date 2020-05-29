@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>On the Likelihood Principle | Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems</title>
+<meta name="generator" content="Jekyll v4.0.1" />
+<meta property="og:title" content="On the Likelihood Principle" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The likelihood principle formalized by Birnbaum in his famous theorem" />
+<meta property="og:description" content="The likelihood principle formalized by Birnbaum in his famous theorem" />
+<link rel="canonical" href="http://kajuna0amendez.github.io/2020/05/28/probability.html" />
+<meta property="og:url" content="http://kajuna0amendez.github.io/2020/05/28/probability.html" />
+<meta property="og:site_name" content="Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-05-28T00:00:00-05:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"http://kajuna0amendez.github.io/2020/05/28/probability.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://kajuna0amendez.github.io/2020/05/28/probability.html"},"headline":"On the Likelihood Principle","dateModified":"2020-05-28T00:00:00-05:00","datePublished":"2020-05-28T00:00:00-05:00","description":"The likelihood principle formalized by Birnbaum in his famous theorem","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://kajuna0amendez.github.io/feed.xml" title="Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/ArtificialIntelligence/">Artificial Intelligence</a><a class="page-link" href="/DeepLearning/">Deep Learning</a><a class="page-link" href="/LinearAlgebra/">Linear Algebra</a><a class="page-link" href="/MachineLearning/">Machine Learning</a><a class="page-link" href="/Probability/">Probability for AI</a><a class="page-link" href="/Projects/">Personal Projects</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">On the Likelihood Principle</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-05-28T00:00:00-05:00" itemprop="datePublished">May 28, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>The likelihood principle formalized by Birnbaum in his famous theorem</p>
+
+<ul>
+  <li>Theorem
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The formal likelihood principle follows from the weak 
+conditional probability and sufficiency principle 
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>There, Birnbaum, defines a symbol called \(Ev \left( E,x \right)\) that 
+tries to give a more formal view of the evidential meaning of a specified 
+sample \(\left( E, x \right)\). Basically, he was able to use this symbol 
+to define the essential properties of evidence defined by the evidence
+of \(x\) of an experiment \(E\).</p>
+
+<p>Then, he went to define an equivalence between different samples on different
+experiments by \(Ev\left(E, x\right) = Ev\left(E', y\right)\). This allowed to 
+define a principle called of sufficiency.</p>
+
+<ul>
+  <li>
+    <p>The Principle of Sufficiency</p>
+
+    <p><strong>Given a experiment with outcomes \(x\) and a sufficient statistic \(t = t\left( x \right)\) 
+  summarizing the basic properties of the samples \(x\) and if you have \(E'\) is
+  the experiment, derived from \(E\), which uses \(t\) to represent any outcome \(x \in E\), then 
+  \(Ev \left( E,x \right) Ev \left( E,t \right)\) for all \(x\).</strong></p>
+  </li>
+</ul>
+
+<p>An interesting part of the principle of sufficiency is the part of <strong>derivation</strong> 
+because such word can signify many possibles way to derive the experiment. Thus, 
+a sufficient statistics can be seen as a connection between any experiments that 
+could be generated. If we decide to go Bayesian, and we have a distribution based on 
+\(E'\) called \(f_{E'}\), we could say</p>
+
+\[p_E'\left(x\right \vert \theta') = p_{E'}\left(t \vert \theta' \right) = p_{E'}\left(t \right)\]
+
+<p>Thus, if this \(t\) is found at the experiment \(E\), Is there an interest to do an extension? After all,
+once we know the \(t\) we have a good summary of the data. Making any interest on making an extension of \(E\) 
+to diminish greatly given the cost of such experiments. For example, you could be a company storing data
+about errors in manufacturing, and you could decide to build an estimator about such errors. It seems to be that
+you could be quite happy given that you could believe that such estimator is sufficient. However, somebody, as
+always, comments that given that the the production lines do not repeat models, How such sufficient statistic can exist?
+Yes, it exist for the past and present data samples, but not for the future data samples.  Such situation is 
+quite problematic, given that the <strong>Holly Grail</strong> of estimation, from the Gaussian point of view, 
+is to be able to summarize the data.</p>
+
+<p>Actually, Pitman–Koopman–Darmois theorem points to such problem. This theorem restricts sufficiency to the 
+exponential family. But as anybody can testify, chaotic events, tend to point to a non-Gaussian Universe i.e the variance
+simply is not bounded. A natural question arises, under such situations, How well the Likelihood principle can work? 
+Is there a way to measure <strong>well</strong>? A fascinating problem to say the least.</p>
+
+  </div><a class="u-url" href="/2020/05/28/probability.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems</li><li><a class="u-email" href="mailto:kajuna0kajuna@gmail.com">kajuna0kajuna@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/kajuna0amendez"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">kajuna0amendez</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>A personal exploration about Machine Learning, Deep Learning and Computational Mathematics</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- for mathjax support -->
+
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+
+</body>
+
+</html>

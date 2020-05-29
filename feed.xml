@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://kajuna0amendez.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://kajuna0amendez.github.io/" rel="alternate" type="text/html" /><updated>2020-05-28T11:53:16-05:00</updated><id>http://kajuna0amendez.github.io/feed.xml</id><title type="html">Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems</title><subtitle>A personal exploration about Machine Learning, Deep Learning and Computational Mathematics</subtitle><entry><title type="html">Intelligent System Ideas</title><link href="http://kajuna0amendez.github.io/2020/05/26/Machine-Learning.html" rel="alternate" type="text/html" title="Intelligent System Ideas" /><published>2020-05-26T00:00:00-05:00</published><updated>2020-05-26T00:00:00-05:00</updated><id>http://kajuna0amendez.github.io/2020/05/26/Machine-Learning</id><content type="html" xml:base="http://kajuna0amendez.github.io/2020/05/26/Machine-Learning.html">&lt;h1 id=&quot;long-ago-evolution-gave-us-the-enchanted-loom-now-we-are-looking-for-a-companion-beyond-de-lonely-universe&quot;&gt;“Long ago evolution gave us the enchanted loom, now we are looking for a companion beyond de lonely universe”&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://kajuna0amendez.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://kajuna0amendez.github.io/" rel="alternate" type="text/html" /><updated>2020-05-29T02:40:51-05:00</updated><id>http://kajuna0amendez.github.io/feed.xml</id><title type="html">Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems</title><subtitle>A personal exploration about Machine Learning, Deep Learning and Computational Mathematics</subtitle><entry><title type="html">On the Likelihood Principle</title><link href="http://kajuna0amendez.github.io/2020/05/28/probability.html" rel="alternate" type="text/html" title="On the Likelihood Principle" /><published>2020-05-28T00:00:00-05:00</published><updated>2020-05-28T00:00:00-05:00</updated><id>http://kajuna0amendez.github.io/2020/05/28/probability</id><content type="html" xml:base="http://kajuna0amendez.github.io/2020/05/28/probability.html">&lt;p&gt;The likelihood principle formalized by Birnbaum in his famous theorem&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Theorem
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;The formal likelihood principle follows from the weak 
+conditional probability and sufficiency principle 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There, Birnbaum, defines a symbol called \(Ev \left( E,x \right)\) that 
+tries to give a more formal view of the evidential meaning of a specified 
+sample \(\left( E, x \right)\). Basically, he was able to use this symbol 
+to define the essential properties of evidence defined by the evidence
+of \(x\) of an experiment \(E\).&lt;/p&gt;
+
+&lt;p&gt;Then, he went to define an equivalence between different samples on different
+experiments by \(Ev\left(E, x\right) = Ev\left(E', y\right)\). This allowed to 
+define a principle called of sufficiency.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The Principle of Sufficiency&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;Given a experiment with outcomes \(x\) and a sufficient statistic \(t = t\left( x \right)\) 
+  summarizing the basic properties of the samples \(x\) and if you have \(E'\) is
+  the experiment, derived from \(E\), which uses \(t\) to represent any outcome \(x \in E\), then 
+  \(Ev \left( E,x \right) Ev \left( E,t \right)\) for all \(x\).&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;An interesting part of the principle of sufficiency is the part of &lt;strong&gt;derivation&lt;/strong&gt; 
+because such word can signify many possibles way to derive the experiment. Thus, 
+a sufficient statistics can be seen as a connection between any experiments that 
+could be generated. If we decide to go Bayesian, and we have a distribution based on 
+\(E'\) called \(f_{E'}\), we could say&lt;/p&gt;
+
+\[p_E'\left(x\right \vert \theta') = p_{E'}\left(t \vert \theta' \right) = p_{E'}\left(t \right)\]
+
+&lt;p&gt;Thus, if this \(t\) is found at the experiment \(E\), Is there an interest to do an extension? After all,
+once we know the \(t\) we have a good summary of the data. Making any interest on making an extension of \(E\) 
+to diminish greatly given the cost of such experiments. For example, you could be a company storing data
+about errors in manufacturing, and you could decide to build an estimator about such errors. It seems to be that
+you could be quite happy given that you could believe that such estimator is sufficient. However, somebody, as
+always, comments that given that the the production lines do not repeat models, How such sufficient statistic can exist?
+Yes, it exist for the past and present data samples, but not for the future data samples.  Such situation is 
+quite problematic, given that the &lt;strong&gt;Holly Grail&lt;/strong&gt; of estimation, from the Gaussian point of view, 
+is to be able to summarize the data.&lt;/p&gt;
+
+&lt;p&gt;Actually, Pitman–Koopman–Darmois theorem points to such problem. This theorem restricts sufficiency to the 
+exponential family. But as anybody can testify, chaotic events, tend to point to a non-Gaussian Universe i.e the variance
+simply is not bounded. A natural question arises, under such situations, How well the Likelihood principle can work? 
+Is there a way to measure &lt;strong&gt;well&lt;/strong&gt;? A fascinating problem to say the least.&lt;/p&gt;</content><author><name></name></author><summary type="html">The likelihood principle formalized by Birnbaum in his famous theorem</summary></entry><entry><title type="html">The Begining</title><link href="http://kajuna0amendez.github.io/2020/05/26/Machine-Learning.html" rel="alternate" type="text/html" title="The Begining" /><published>2020-05-26T00:00:00-05:00</published><updated>2020-05-26T00:00:00-05:00</updated><id>http://kajuna0amendez.github.io/2020/05/26/Machine-Learning</id><content type="html" xml:base="http://kajuna0amendez.github.io/2020/05/26/Machine-Learning.html">&lt;h1 id=&quot;long-ago-evolution-gave-us-the-enchanted-loom-now-we-are-looking-for-a-companion-beyond-de-lonely-universe&quot;&gt;“Long ago evolution gave us the enchanted loom, now we are looking for a companion beyond de lonely universe”&lt;/h1&gt;
 
 &lt;p&gt;My intention with this page is to post my thoughts, classes, notes and projects about these ideas:&lt;/p&gt;
 
@@ -8,4 +60,5 @@
 - Computational Mathematics 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Because at the end the search for Artificial Intelligence is to use applied mathematics to understand the universe.&lt;/p&gt;</content><author><name></name></author><summary type="html">“Long ago evolution gave us the enchanted loom, now we are looking for a companion beyond de lonely universe”</summary></entry></feed>
+&lt;p&gt;Because at the end the search for Artificial Intelligence is to use applied mathematics to understand the universe. Therefore, I am plannign to 
+add thoughts and mathematical equations about these issues.&lt;/p&gt;</content><author><name></name></author><summary type="html">“Long ago evolution gave us the enchanted loom, now we are looking for a companion beyond de lonely universe”</summary></entry></feed>
