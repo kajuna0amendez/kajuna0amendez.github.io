@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://kajuna0amendez.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://kajuna0amendez.github.io/" rel="alternate" type="text/html" /><updated>2020-05-31T10:14:28-05:00</updated><id>http://kajuna0amendez.github.io/feed.xml</id><title type="html">Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems</title><subtitle>Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics</subtitle><entry><title type="html">About slides on ML, DL, AI, Optimization</title><link href="http://kajuna0amendez.github.io/2020/05/31/onclasse.html" rel="alternate" type="text/html" title="About slides on ML, DL, AI, Optimization" /><published>2020-05-31T00:00:00-05:00</published><updated>2020-05-31T00:00:00-05:00</updated><id>http://kajuna0amendez.github.io/2020/05/31/onclasse</id><content type="html" xml:base="http://kajuna0amendez.github.io/2020/05/31/onclasse.html">&lt;p&gt;I have been adding the slides on the subjects of 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://kajuna0amendez.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://kajuna0amendez.github.io/" rel="alternate" type="text/html" /><updated>2020-05-31T10:26:57-05:00</updated><id>http://kajuna0amendez.github.io/feed.xml</id><title type="html">Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems</title><subtitle>Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics</subtitle><entry><title type="html">About slides on ML, DL, AI, Optimization</title><link href="http://kajuna0amendez.github.io/2020/05/31/onclasse.html" rel="alternate" type="text/html" title="About slides on ML, DL, AI, Optimization" /><published>2020-05-31T00:00:00-05:00</published><updated>2020-05-31T00:00:00-05:00</updated><id>http://kajuna0amendez.github.io/2020/05/31/onclasse</id><content type="html" xml:base="http://kajuna0amendez.github.io/2020/05/31/onclasse.html">&lt;p&gt;Recently, I have been adding slides on subjects of 
 Machine Learning, Deep Learning, Linear Algebra, Probability.
-However, I need to complete some subjects in Deep Learning:&lt;/p&gt;
+However, I still need to complete several of them, For example, 
+Deep Learning needs to have slides on:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Autoencoders&lt;/li&gt;
@@ -9,9 +10,9 @@ However, I need to complete some subjects in Deep Learning:&lt;/p&gt;
   &lt;li&gt;Second Order Methods&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;However there is a subject on their applications that I consider
-way more  interesting because there we have more interesting
-architectures applied to the subjects as&lt;/p&gt;
+&lt;p&gt;However, there applications that I consider
+way more interesting, because there, we have interesting
+architectures applied to several problems on&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Attention for Natural Language Processing,&lt;/li&gt;
@@ -21,22 +22,27 @@ architectures applied to the subjects as&lt;/p&gt;
   &lt;li&gt;etc.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Also I am planning to add my slides on AI. However, I need to select the 
-ones that are relevant for the times. Many things on the “old” AI are not
-anymore interesting because they have been surpassed by other solutions.
+&lt;p&gt;Also, I am planning to add some slides on AI. However, I need to select 
+topics that are relevant for our times. Given that many things on the “old” AI 
+are not interesting anymore because they have been surpassed by other solutions.
 However, the subject of&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Bayesian Networks,&lt;/li&gt;
-  &lt;li&gt;Reinforcment Learning&lt;/li&gt;
+  &lt;li&gt;Reinforcement Learning&lt;/li&gt;
   &lt;li&gt;Approximated Dynamic Programming&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;That are still valid on these times.&lt;/p&gt;
 
 &lt;p&gt;Finally, but not least important, and something I been trying to generate for a long
-tiem, a series of slides in optimization. I have several ideas, based on certain works
-by Nocedall and Jordan, on how to select the subjects.&lt;/p&gt;</content><author><name></name></author><summary type="html">I have been adding the slides on the subjects of Machine Learning, Deep Learning, Linear Algebra, Probability. However, I need to complete some subjects in Deep Learning:</summary></entry><entry><title type="html">About Lea Vega graduation</title><link href="http://kajuna0amendez.github.io/2020/05/30/leavega.html" rel="alternate" type="text/html" title="About Lea Vega graduation" /><published>2020-05-30T00:00:00-05:00</published><updated>2020-05-30T00:00:00-05:00</updated><id>http://kajuna0amendez.github.io/2020/05/30/leavega</id><content type="html" xml:base="http://kajuna0amendez.github.io/2020/05/30/leavega.html">&lt;p&gt;Five years ago, I was surprised that Lea Vega went to my office to ask me to be her advisor. After all
+time, is a series of slides on optimization and its applications in AI. I have several ideas, based on certain works
+by Bottou and Jin [1,2], on how to select the subjects.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Bottou, Léon, Frank E. Curtis, and Jorge Nocedal. “Optimization methods for large-scale machine learning.” Siam Review 60.2 (2018): 223-311.&lt;/li&gt;
+  &lt;li&gt;Jin, Chi, Praneeth Netrapalli, and Michael I. Jordan. “Accelerated gradient descent escapes saddle points faster than gradient descent.” arXiv preprint arXiv:1711.10456 (2017).&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Recently, I have been adding slides on subjects of Machine Learning, Deep Learning, Linear Algebra, Probability. However, I still need to complete several of them, For example, Deep Learning needs to have slides on:</summary></entry><entry><title type="html">About Lea Vega graduation</title><link href="http://kajuna0amendez.github.io/2020/05/30/leavega.html" rel="alternate" type="text/html" title="About Lea Vega graduation" /><published>2020-05-30T00:00:00-05:00</published><updated>2020-05-30T00:00:00-05:00</updated><id>http://kajuna0amendez.github.io/2020/05/30/leavega</id><content type="html" xml:base="http://kajuna0amendez.github.io/2020/05/30/leavega.html">&lt;p&gt;Five years ago, I was surprised that Lea Vega went to my office to ask me to be her advisor. After all
 I am not exactly a nice person… actually I am always asking for more to my students. But Lea did not 
 need any “encouragment” (Do you see my terrible smile?). For example, once Dr. Paul Gader came to visit 
 the center and was quite nicely impressed on her work. Now, after all this time and work by her using 
