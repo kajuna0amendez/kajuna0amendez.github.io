@@ -9,13 +9,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics" />
 <meta property="og:description" content="Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics" />
-<link rel="canonical" href="http://kajuna0amendez.github.io/MachineLearning/" />
-<meta property="og:url" content="http://kajuna0amendez.github.io/MachineLearning/" />
+<link rel="canonical" href="http://localhost:4000/MachineLearning/" />
+<meta property="og:url" content="http://localhost:4000/MachineLearning/" />
 <meta property="og:site_name" content="Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"http://kajuna0amendez.github.io/MachineLearning/","headline":"Machine Learning","description":"Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"http://localhost:4000/MachineLearning/","headline":"Machine Learning","description":"Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://kajuna0amendez.github.io/feed.xml" title="Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems</a><nav class="site-nav">
@@ -28,7 +28,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/MachineLearning/">Machine Learning</a><a class="page-link" href="/DeepLearning/">Deep Learning</a><a class="page-link" href="/ArtificialIntelligence/">Artificial Intelligence</a><a class="page-link" href="/AnalysisAlgorithms/">Analysis of Algorithms</a><a class="page-link" href="/LinearAlgebra/">Linear Algebra for AI</a><a class="page-link" href="/Probability/">Probability for AI</a><a class="page-link" href="/Optimization/">Optimization for AI</a><a class="page-link" href="/Cython/">Cython and Numpy programming</a><a class="page-link" href="/Projects/">Personal Projects</a><a class="page-link" href="/Articles/">Publications</a><a class="page-link" href="/Students/">Past Students</a><a class="page-link" href="/Bio/">About Us</a></div>
+        <div class="trigger"><a class="page-link" href="/MachineLearning/">Machine Learning</a><a class="page-link" href="/DeepLearning/">Deep Learning</a><a class="page-link" href="/ArtificialIntelligence/">Artificial Intelligence</a><a class="page-link" href="/AnalysisAlgorithms/">Analysis of Algorithms</a><a class="page-link" href="/LinearAlgebra/">Linear Algebra for AI</a><a class="page-link" href="/Probability/">Probability for AI</a><a class="page-link" href="/Optimization/">Optimization for AI</a><a class="page-link" href="/Cython/">Cython and Numpy programming</a><a class="page-link" href="/Projects/">Personal Projects</a><a class="page-link" href="/TechnicalPapers/">Technical Papers</a><a class="page-link" href="/Articles/">Publications</a><a class="page-link" href="/Students/">Past Students</a><a class="page-link" href="/Bio/">About Us</a></div>
       </nav></div>
 </header>
 
@@ -51,6 +51,8 @@
     <ul>
       <li>Some of the basic ideas on Learning</li>
     </ul>
+
+\[\min_{\widehat{f}}R\left(\widehat{f}\right)=\min_{\widehat{f}}E_{\mathcal{X},\mathcal{Y}}\left[\left(\widehat{f}\left(\boldsymbol{x}\right)-y\right)^{2}\vert\boldsymbol{x}\in\mathcal{X}\subseteq\mathbb{R}^{d},y\in\mathcal{Y}\subseteq\mathbb{R}\right]\]
   </li>
   <li><strong>Linear Models</strong> <a href="/assets/ml_files/03_Linear_Models_and_Least_Squared_Error.pdf">slides</a>
     <ul>
@@ -58,11 +60,15 @@
       <li>Some Basic ideas on regularization</li>
       <li>Interludes with Linear Algebra and Calculus</li>
     </ul>
+
+\[g\left(\boldsymbol{\boldsymbol{x}}\right)=\boldsymbol{W^{T}\boldsymbol{x}=\boldsymbol{T}^{T}\left(\boldsymbol{X}^{+}\right)^{T}\boldsymbol{x}}\]
   </li>
   <li><strong>Regularization</strong> <a href="/assets/ml_files/04_Regularization_Gradient_Descent_Fisher_Linear_Discriminant.pdf">slides</a>
     <ul>
       <li>A deeper study in the field of regularization</li>
     </ul>
+
+\[C_{h}=\left(A^{T}A+h^{2}I\right)^{-1}A^{T}\]
   </li>
   <li><strong>Batch and Stochastic Gradient Descent</strong> <a href="/assets/ml_files/05_Stochastic_Gradient_Descent.pdf">slides</a>
     <ul>
@@ -74,6 +80,8 @@
       <li>AdaGrad</li>
       <li>ADAM</li>
     </ul>
+
+\[\boldsymbol{w}_{n}=\boldsymbol{w}_{n-1}+\mu_{n}\boldsymbol{x}_{n}\left(\boldsymbol{x}_{n}^{T}\boldsymbol{w}_{n-1}-y_{n}\right)\]
   </li>
   <li><strong>Logistic Regression</strong> <a href="/assets/ml_files/06_Logistic_Regression.pdf">slides</a>
     <ul>
@@ -81,24 +89,28 @@
       <li>The Logistic Regression model</li>
       <li>Accelerating the logistic regression</li>
     </ul>
+
+\[\mathcal{L}\left(\boldsymbol{w}\right)=\sum_{i=1}^{N}\left\{ y_{i}\boldsymbol{w}^{T}\boldsymbol{x}_{i}-\log\left(1+\exp\left\{ \boldsymbol{w}^{T}\boldsymbol{x}_{i}\right\} \right)\right\}\]
   </li>
-  <li><strong>Introduction to Bayes Classification</strong>
+  <li><strong>Introduction to Bayes Classification</strong>  <a href="/assets/ml_files/07_Introduction_Bayes_Classification.pdf">slides</a>
     <ul>
       <li>Naive Bayes</li>
       <li>Discriminative Functions</li>
     </ul>
+
+\[\ln L\left(\omega_{i}\right)=-\frac{n}{2}\ln\left|\Sigma_{i}\right|-\frac{1}{2}\left[\sum_{j=1}^{n}\left(\boldsymbol{x_{j}}-\boldsymbol{\mu_{i}}\right)^{T}\Sigma_{i}^{-1}\left(\boldsymbol{x_{j}}-\boldsymbol{\mu_{i}}\right)\right]+c_{2}\]
   </li>
   <li><strong>Maximum a Posteriori Methods</strong>
     <ul>
+      <li>Going beyond Maximum Likelihood</li>
       <li>The general case</li>
-      <li>Expectation Maximization Algorithm</li>
     </ul>
   </li>
-  <li>
-    <p><strong>EM Algorithm</strong></p>
-  </li>
-  <li>
-    <p><strong>Hidden Markov Models</strong></p>
+  <li><strong>EM Algorithm</strong>  <a href="/assets/ml_files/08_Expectation_Maximization.pdf">slides</a>
+    <ul>
+      <li>A classic example of the use of the MAP</li>
+      <li>Its use in clustering</li>
+    </ul>
   </li>
   <li><strong>Feature Selection</strong>
     <ul>
@@ -113,6 +125,13 @@
       <li>Principal Component Analysis</li>
       <li>Singular Value Decomposition</li>
       <li>Space Embedding</li>
+    </ul>
+  </li>
+  <li><strong>Hidden Markov Models</strong>
+    <ul>
+      <li>Another classic example of the use of Dynamic Programming and EM</li>
+      <li>It has been used in voice recognition</li>
+      <li>A small example on the use neural networks</li>
     </ul>
   </li>
   <li>
@@ -181,6 +200,8 @@
 </footer>
 
 <!-- for mathjax support -->
+
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 
 </body>
 
