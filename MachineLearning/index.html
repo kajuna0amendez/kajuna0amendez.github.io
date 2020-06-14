@@ -9,13 +9,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics" />
 <meta property="og:description" content="Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics" />
-<link rel="canonical" href="http://localhost:4000/MachineLearning/" />
-<meta property="og:url" content="http://localhost:4000/MachineLearning/" />
+<link rel="canonical" href="http://kajuna0amendez.github.io/MachineLearning/" />
+<meta property="og:url" content="http://kajuna0amendez.github.io/MachineLearning/" />
 <meta property="og:site_name" content="Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"http://localhost:4000/MachineLearning/","headline":"Machine Learning","description":"Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"http://kajuna0amendez.github.io/MachineLearning/","description":"Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics","headline":"Machine Learning","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://kajuna0amendez.github.io/feed.xml" title="Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems</a><nav class="site-nav">
@@ -111,21 +111,32 @@
       <li>A classic example of the use of the MAP</li>
       <li>Its use in clustering</li>
     </ul>
+
+\[Q\left(\Theta\vert\Theta^{g}\right)=\sum_{\boldsymbol{y}\in\mathcal{Y}}\sum_{i=1}^{N}\log\left[\alpha_{y_{i}}p_{y_{i}}\left(x_{i}\vert\theta_{y_{i}}\right)\right]\prod_{j=1}^{N}p\left(y_{j}\vert x_{j},\Theta^{g}\right)\]
   </li>
-  <li><strong>Feature Selection</strong>
+  <li><strong>Feature Selection</strong> <a href="/assets/ml_files/09_Feature_Selection.pdf">slides</a>
     <ul>
       <li>Introduction to the curse of dimensionality</li>
+      <li>Normalization the classic methods</li>
+      <li>Data imputation using EM and Matrix Completion</li>
       <li>Methods for Subset Selection</li>
-      <li>Shrinkage methods</li>
+      <li>Shrinkage methods, the classic LASSO</li>
     </ul>
+
+\[\widehat{\boldsymbol{w}}^{LASSO}=\arg\min_{\boldsymbol{w}}\left\{ \sum_{i=1}^{N}\left(y_{i}-\boldsymbol{x}^{T}\boldsymbol{w}\right)^{2}+\lambda\sum_{i=1}^{d}\left|w_{i}\right|^{q}\right\} \mbox{ with }q\geq0\]
   </li>
-  <li><strong>Feature Generation</strong>
+  <li><strong>Feature Generation</strong> <a href="/assets/ml_files/10_Feature_Generation.pdf">slides</a>
     <ul>
       <li>Introduction</li>
+      <li>Fisher Linear Discriminant</li>
       <li>Principal Component Analysis</li>
       <li>Singular Value Decomposition</li>
-      <li>Space Embedding</li>
     </ul>
+
+\[L\left(\boldsymbol{u}_{2},\lambda_{1},\lambda_{2}\right)=\boldsymbol{u}_{2}^{T}S\boldsymbol{u}_{2}-\lambda_{1}\left(\boldsymbol{u}_{2}^{T}\boldsymbol{u}_{2}-1\right)-\lambda_{2}\left(\boldsymbol{u}_{2}^{T}\boldsymbol{u}_{1}-0\right)\]
+  </li>
+  <li>
+    <p><strong>Measures of Accuracy</strong></p>
   </li>
   <li><strong>Hidden Markov Models</strong>
     <ul>
@@ -133,9 +144,6 @@
       <li>It has been used in voice recognition</li>
       <li>A small example on the use neural networks</li>
     </ul>
-  </li>
-  <li>
-    <p><strong>Measures of Accuracy</strong></p>
   </li>
   <li>
     <p><strong>Support Vector Machines</strong></p>
