@@ -9,13 +9,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics" />
 <meta property="og:description" content="Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics" />
-<link rel="canonical" href="http://kajuna0amendez.github.io/MachineLearning/" />
-<meta property="og:url" content="http://kajuna0amendez.github.io/MachineLearning/" />
+<link rel="canonical" href="http://localhost:4000/MachineLearning/" />
+<meta property="og:url" content="http://localhost:4000/MachineLearning/" />
 <meta property="og:site_name" content="Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"http://kajuna0amendez.github.io/MachineLearning/","description":"Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics","headline":"Machine Learning","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"http://localhost:4000/MachineLearning/","headline":"Machine Learning","description":"Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://kajuna0amendez.github.io/feed.xml" title="Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems</a><nav class="site-nav">
@@ -103,8 +103,11 @@
   <li><strong>Maximum a Posteriori Methods</strong>
     <ul>
       <li>Going beyond Maximum Likelihood</li>
-      <li>The general case</li>
+      <li>The General Case</li>
+      <li>How can be used in Bayesian Learning?</li>
     </ul>
+
+\[p\left(\boldsymbol{w},\sigma^{2}\vert\boldsymbol{y},\tau\right)\propto p\left(\boldsymbol{y}\vert\boldsymbol{w},\sigma^{2}\right)p\left(\boldsymbol{w}\vert\tau\right)p\left(\sigma^{2}\right)\]
   </li>
   <li><strong>EM Algorithm</strong>  <a href="/assets/ml_files/08_Expectation_Maximization.pdf">slides</a>
     <ul>
@@ -135,32 +138,117 @@
 
 \[L\left(\boldsymbol{u}_{2},\lambda_{1},\lambda_{2}\right)=\boldsymbol{u}_{2}^{T}S\boldsymbol{u}_{2}-\lambda_{1}\left(\boldsymbol{u}_{2}^{T}\boldsymbol{u}_{2}-1\right)-\lambda_{2}\left(\boldsymbol{u}_{2}^{T}\boldsymbol{u}_{1}-0\right)\]
   </li>
-  <li>
-    <p><strong>Measures of Accuracy</strong></p>
+  <li><strong>Measures of Accuracy</strong> <a href="/assets/ml_files/11_Measures_Of_Accuracy.pdf">slides</a>
+    <ul>
+      <li>The alpha beta errors</li>
+      <li>The Confusion Matrix</li>
+      <li>The ROC curve</li>
+    </ul>
   </li>
-  <li><strong>Hidden Markov Models</strong>
+  <li><strong>Hidden Markov Models</strong> <a href="/assets/ml_files/13_Hidden_Markov_Models.pdf">slides</a>
     <ul>
       <li>Another classic example of the use of Dynamic Programming and EM</li>
-      <li>It has been used in voice recognition</li>
-      <li>A small example on the use neural networks</li>
+      <li>The Three Problems</li>
+    </ul>
+
+\[\]
+  </li>
+  <li><strong>Support Vector Machines</strong> <a href="/assets/ml_files/12_Support_Vector_Machines.pdf">slides</a>
+    <ul>
+      <li>The idea of margins</li>
+      <li>Using the dual solution</li>
+      <li>The kernel trick</li>
+      <li>The soft margins</li>
+    </ul>
+
+\[Q(\alpha)={\displaystyle \sum_{i=1}^{N}\alpha_{i}-\frac{1}{2}\sum_{i=1}^{N}\sum_{j=1}^{N}\alpha_{i}\alpha_{j}d_{i}d_{j}\boldsymbol{x}_{j}^{T}\boldsymbol{x}_{i}}\]
+  </li>
+  <li><strong>The Perceptron</strong>  <a href="/assets/ml_files/14_Perceptron.pdf">slides</a>
+    <ul>
+      <li>The first discrete neural network</li>
+      <li>The Idea of Learning</li>
+    </ul>
+  </li>
+  <li><strong>Multilayer Perceptron</strong> <a href="/assets/ml_files/15_Multilayer_Perceptron.pdf">slides</a>
+    <ul>
+      <li>The Xor Problem</li>
+      <li>The Hidden Layer</li>
+      <li>Backpropagation for the new architecture</li>
+      <li>Heuristic to improve the performance</li>
+    </ul>
+  </li>
+  <li><strong>The Universal Representation Theorem</strong> <a href="/assets/ml_files/16_Universal_Approximation_Theorem.pdf">slides</a>
+    <ul>
+      <li>Cybenko Theorem</li>
+    </ul>
+  </li>
+  <li><strong>Convolutional Networks</strong> <a href="/assets/ml_files/17_Convolutional_Networks.pdf">slides</a>
+    <ul>
+      <li>Introduction to the image locality problem</li>
+      <li>How convolutions can solve this problems</li>
+      <li>Backpropagation on the CNN</li>
+    </ul>
+  </li>
+  <li><strong>Regression and Classification Trees</strong> <a href="/assets/ml_files/18_Supervised_Decision_Trees.pdf">slides</a>
+    <ul>
+      <li>Using decision trees for Regression</li>
+      <li>The Classification Tree</li>
+      <li>Entropy to build the Classification Tree</li>
+    </ul>
+  </li>
+  <li><strong>Vapnik-Chervonenkis Dimensions</strong> <a href="/assets/ml_files/19_Vapnik_Chervonenkis_Dimension.pdf">slides</a>
+    <ul>
+      <li>Can we learn?</li>
+      <li>The Shattering of the space</li>
+      <li>The Inequality</li>
+      <li>How to measure the power of a classifier</li>
+    </ul>
+  </li>
+  <li><strong>Combining Models and Boosting</strong>  <a href="/assets/ml_files/20_Combining_Models.pdf">slides</a>
+    <ul>
+      <li>Bagging</li>
+      <li>Mixture of Experts</li>
+      <li>AdaBoosting</li>
+    </ul>
+  </li>
+  <li><strong>Boosting Trees, XBoost and Random Forrest</strong> <a href="/assets/ml_files/21_Boosting_Trees_and_Random_Forest.pdf">slides</a>
+    <ul>
+      <li>Using Boosting in Trees</li>
+      <li>Taylor approximation for Boosting Trees</li>
+      <li>Random Forrest</li>
+    </ul>
+  </li>
+  <li><strong>Introduction to Clustering</strong>  <a href="/assets/ml_files/22_Introduction_Clustering.pdf">slides</a>
+    <ul>
+      <li>The idea of finding patterns in the data</li>
+      <li>The need for a similarity for the data</li>
+      <li>The different features</li>
+    </ul>
+  </li>
+  <li><strong>K-Means, K-Center and K-Meoids</strong>  <a href="/assets/ml_files/23_KMeans_KCenter_KMeoids.pdf">slides</a>
+    <ul>
+      <li>The NP-Problem of Clustering</li>
+      <li>Using Cost functions for finding Clusters</li>
+      <li>Using Approximation Algorithms for Clustering</li>
+      <li>Beyond the metric space</li>
     </ul>
   </li>
   <li>
-    <p><strong>Support Vector Machines</strong></p>
+    <p><strong>Hierarchical Clustering and Clustering for Large Data Sets</strong>  <a href="/assets/ml_files/24_Hierarchical_Clustering_Large_Data_Set_Clustering.pdf">slides</a></p>
   </li>
   <li>
-    <p><strong>The Perceptron</strong></p>
+    <p><strong>Cluster Validity</strong> <a href="/assets/ml_files/25_Unsupervised_Cluster_Validity.pdf">slides</a></p>
   </li>
   <li>
-    <p><strong>Multilayer Perceptron</strong></p>
+    <p><strong>Associative Rules</strong> <a href="/assets/ml_files/26_Associative_Rules.pdf">slides</a></p>
   </li>
   <li>
-    <p><strong>Convolutional Networks</strong></p>
+    <p><strong>Locality Sensitive Hashing</strong> <a href="/assets/ml_files/27_Locality_Sensitive_Hashing.pdf">slides</a></p>
   </li>
   <li>
-    <p><strong>Recurrent Neural Networks</strong></p>
+    <p><strong>Page Rank</strong> <a href="/assets/ml_files/28_PageRank.pdf">slides</a></p>
   </li>
-  <li><strong>Regression and Classification Trees</strong></li>
+  <li><strong>Semi-supervised Learning</strong> <a href="/assets/ml_files/29_Semisupervised_Learning.pdf">slides</a></li>
 </ol>
 
 <h1 id="book-chapters-on-machine-learning">Book Chapters on Machine Learning</h1>
