@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-22T01:16:36-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems</title><subtitle>Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics</subtitle><entry><title type="html">Applied Mathematics and the Problem of Context</title><link href="http://localhost:4000/2020/06/01/ContextProblem.html" rel="alternate" type="text/html" title="Applied Mathematics and the Problem of Context" /><published>2020-06-01T00:00:00-05:00</published><updated>2020-06-01T00:00:00-05:00</updated><id>http://localhost:4000/2020/06/01/ContextProblem</id><content type="html" xml:base="http://localhost:4000/2020/06/01/ContextProblem.html">&lt;p&gt;Recently, I got into a discussion with a person from telecomunications on the subject of context. Context? Yes, the bothersome problem 
+on the subject of Applied Math. Wait a minute, you will say What? I know is quite annoying to ask about context. Let me explain, 
+what happens in education is that you were taught that math was basically an immobile object… always true and eternal… which is true
+if you talk about the purist world of concepts beyond physical laws and constraints. Yes the parallelogram rule is always true, but as 
+Goedel proved long ago in his theorem [1]:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Theorem of Incompleteness&lt;/p&gt;
+
+    &lt;p&gt;Any consistent formal system \(F\) within which a certain amount of elementary arithmetic can be carried out 
+  is incomplete; i.e., there are statements of the language of \(F\) which can neither be proved nor disproved in \(F\).&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But you can say, but there is a proof of it? What are you talking about? Then, I say, yes!! You are correct, if you are in a Euclidean Space. 
+The ball falls… you have a context… your space is a simple hyperplane no singularities or deformations on it. It is the infamous context which you cannot
+prove or disprove that your really live on it. Then, you finally understand my comment about the concept space of ideas. There everything is fine pure and perfect!
+But in applied math, context is everything and important it is. For example, not for nothing, the count of Buffon went to throw a coin thousand of times
+over a floor covered with identically shaped tiles. After all, the math for probability was not usable, if it was not able to describe the results of such
+experiments. Thus, we propose the following baseline:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Remark&lt;/p&gt;
+
+    &lt;p&gt;A problem in the real world forces a set of variables \(X\) in a non-deterministic and non-smooth way in a series of
+  non-deterministic and non-smooth set operators \(D_f\).&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Given that our system of sensors is limited, knowing  such variables is limited in many ways. 
+Thus, we define a sensor as a function between our smooth variables and the function \(f\in D_f\):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Definition (Interface)&lt;/p&gt;
+
+    &lt;p&gt;A sensor is a interface between a function \(f \in D_f\) and a smooth function \(g \in S_g\):&lt;/p&gt;
+
+\[\mathcal{G}:D_{f}\rightarrow S_{g}\]
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here, the smooth function has a small variance making possible to be interpretable. There, an interpretable function can well-possed or ill-possed [2] given that
+even ill-possed functions cab be regularized increasing their interpretability.  You can think of such functions as smoothing  over a high variance mapping.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/math_files/RealityVsInterface.png&quot; alt=&quot;Interface&quot; height=&quot;50%&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Making possible to say that a sensor will always filter most of the data given the variability of the reality operator which still depends on other variables 
+which could be high variable or not. Basically, the variance of the basic variables are being tamed by the reality operator. Therefore, we have the following definition:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Definition (Context):&lt;/p&gt;
+
+    &lt;p&gt;The context is the interpretation of the data coming from the sensor. Such interpretation is based in a  model \(M\), mathematical or not, 
+ with a certain bias based in prior knowledge on previous contexts.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thus, What kind of context are we getting at the end of the pipeline? Given that we are in the realm of the possible, we have to possibilities:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The Reality operator is a perfect shield between the possible and reality&lt;/li&gt;
+  &lt;li&gt;The Reality operator can give hints of the possible&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Therefore, the context is affected by these two ideas, but given that the context can evolve from civilization to civilization, the second possibility is the most
+likely. However, the reality operator is not easily accessible by simple tools as more of the reality operator is explored deeper and deeper.&lt;/p&gt;
+
+&lt;p&gt;How is this context, not the reality operator, impacting the field of Mathematics? After all, as we pointed out, pure math tends to live on the 
+spaces of ideas beyond the context. Therefore, only Applied Mathematics depends on such context, and its impact is two fold:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;If the model does nos predict the context… it is no more Applied Mathematics but pure Math as for example String Theory [3].&lt;/li&gt;
+  &lt;li&gt;The data from the context is pushing forward the development of Applied Mathematics, given the need to understand and predict the context.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;There you have one of its greatest drawbacks, given our limitations on building new sensors, Applied Mathematics requires an access to the context
+to be able to validate its ideas. However,  Applied Mathematics is still lacking on something fundamental, basically to understand the Reality Operator, and although some
+attempts have been tried, this operator stays still the greatest riddle of the human history.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Raatikainen, Panu. “Gödel’s incompleteness theorems.” (2013).&lt;/li&gt;
+  &lt;li&gt;Wahba, Grace. “Three topics in ill-posed problems.” Inverse and ill-posed problems. Academic Press, 1987. 37-51.&lt;/li&gt;
+  &lt;li&gt;Woit, P “Not Even Wrong: The Failure of String Theory and the Search for Unity in Physical Law
+Author”&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Recently, I got into a discussion with a person from telecomunications on the subject of context. Context? Yes, the bothersome problem on the subject of Applied Math. Wait a minute, you will say What? I know is quite annoying to ask about context. Let me explain, what happens in education is that you were taught that math was basically an immobile object… always true and eternal… which is true if you talk about the purist world of concepts beyond physical laws and constraints. Yes the parallelogram rule is always true, but as Goedel proved long ago in his theorem [1]:</summary></entry><entry><title type="html">About slides on ML, DL, AI, Optimization</title><link href="http://localhost:4000/2020/05/31/onclasse.html" rel="alternate" type="text/html" title="About slides on ML, DL, AI, Optimization" /><published>2020-05-31T00:00:00-05:00</published><updated>2020-05-31T00:00:00-05:00</updated><id>http://localhost:4000/2020/05/31/onclasse</id><content type="html" xml:base="http://localhost:4000/2020/05/31/onclasse.html">&lt;p&gt;Recently, I have been adding slides on subjects of 
+Machine Learning, Deep Learning, Linear Algebra, Probability, etc.
+However, I still need to complete several of them as for example, 
+Deep Learning needs to have slides on:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Autoencoders&lt;/li&gt;
+  &lt;li&gt;Reinforcement Learning&lt;/li&gt;
+  &lt;li&gt;Generative Deep Networks&lt;/li&gt;
+  &lt;li&gt;Second Order Methods&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Nevertheless, there are applications that I consider
+way more interesting because of the architectures applied there for&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Attention in Natural Language Processing,&lt;/li&gt;
+  &lt;li&gt;Customer Churning,&lt;/li&gt;
+  &lt;li&gt;3D reconstruction,&lt;/li&gt;
+  &lt;li&gt;Metric Learning,&lt;/li&gt;
+  &lt;li&gt;etc.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Further, I am planning to add some slides on AI. However, I need to select 
+topics that are relevant for our times. Given that many things on the “old” AI 
+are not interesting anymore because they have been surpassed by other solutions.
+For example, the subject of&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Bayesian Networks,&lt;/li&gt;
+  &lt;li&gt;Reinforcement Learning&lt;/li&gt;
+  &lt;li&gt;Approximated Dynamic Programming&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;are still valid on these times.&lt;/p&gt;
+
+&lt;p&gt;Finally, but not least important, and something I been trying to generate for a long
+time, is a series of slides on optimization and its applications in AI. I have several ideas, based on certain works
+by Bottou and Jin [1,2], on how to select the subjects for the optimization section.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Bottou, Léon, Frank E. Curtis, and Jorge Nocedal. “Optimization methods for large-scale machine learning.” Siam Review 60.2 (2018): 223-311.&lt;/li&gt;
+  &lt;li&gt;Jin, Chi, Praneeth Netrapalli, and Michael I. Jordan. “Accelerated gradient descent escapes saddle points faster than gradient descent.” arXiv preprint arXiv:1711.10456 (2017).&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Recently, I have been adding slides on subjects of Machine Learning, Deep Learning, Linear Algebra, Probability, etc. However, I still need to complete several of them as for example, Deep Learning needs to have slides on:</summary></entry><entry><title type="html">About Lea Vega graduation</title><link href="http://localhost:4000/2020/05/30/leavega.html" rel="alternate" type="text/html" title="About Lea Vega graduation" /><published>2020-05-30T00:00:00-05:00</published><updated>2020-05-30T00:00:00-05:00</updated><id>http://localhost:4000/2020/05/30/leavega</id><content type="html" xml:base="http://localhost:4000/2020/05/30/leavega.html">&lt;p&gt;Five years ago, I was surprised that Lea Vega went to my office to ask me to be her advisor. After all
+I am not exactly a nice person… actually I am always asking for more to my students. But Lea did not 
+need any “encouragment” (Do you see my terrible smile?). For example, once Dr. Paul Gader came to visit 
+the center and was quite nicely impressed on her work. Now, after all this time and work by her using 
+collapsed Gibbs samplers, neo4j, and a lot of data collection, she was able to finish and got good results as:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/lea_files/Performance.png&quot; alt=&quot;Performance&quot; height=&quot;50%&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Actually, it was nice to see that a deep analysis of the problem can outperform the simple application of
+massive data.&lt;/p&gt;
+
+&lt;p&gt;So, yesterday, she was finally able to present, online the first one at Cinvestav, her graduation exam, making
+her a new minted PhD. She already has a nice work waiting for her, and that is good given the situation. I am 
+quite happy, and now new arise from this. Two good news are&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;We are planning to post her code, so anybody can repeat her experiments.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In a previous post, thoughts about sufficiency principle gave me an idea about creating something called sufficiency on-line&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;How &lt;strong&gt;regret&lt;/strong&gt; can be used in your estimator as you collect data by extending the idea from optimization to sufficiency&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Five years ago, I was surprised that Lea Vega went to my office to ask me to be her advisor. After all I am not exactly a nice person… actually I am always asking for more to my students. But Lea did not need any “encouragment” (Do you see my terrible smile?). For example, once Dr. Paul Gader came to visit the center and was quite nicely impressed on her work. Now, after all this time and work by her using collapsed Gibbs samplers, neo4j, and a lot of data collection, she was able to finish and got good results as:</summary></entry><entry><title type="html">On the Likelihood Principle</title><link href="http://localhost:4000/2020/05/28/probability.html" rel="alternate" type="text/html" title="On the Likelihood Principle" /><published>2020-05-28T00:00:00-05:00</published><updated>2020-05-28T00:00:00-05:00</updated><id>http://localhost:4000/2020/05/28/probability</id><content type="html" xml:base="http://localhost:4000/2020/05/28/probability.html">&lt;p&gt;The likelihood principle formalized by Birnbaum in his famous theorem&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Theorem
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;The formal likelihood principle follows from the weak 
+conditional probability and sufficiency principle 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There, Birnbaum, defines a symbol called \(Ev \left( E,x \right)\) that 
+tries to give a more formal view of the evidential meaning of a specified 
+sample \(\left( E, x \right)\). Basically, he was able to use this symbol 
+to define the essential properties of evidence defined by the evidence
+of \(x\) of an experiment \(E\).&lt;/p&gt;
+
+&lt;p&gt;Then, he went to define an equivalence between different samples on different
+experiments by \(Ev\left(E, x\right) = Ev\left(E', y\right)\). This allowed to 
+define a principle called of sufficiency.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The Principle of Sufficiency&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;Given a experiment with outcomes \(x\) and a sufficient statistic \(t = t\left( x \right)\) 
+  summarizing the basic properties of the samples \(x\) and if you have \(E'\) is
+  the experiment, derived from \(E\), which uses \(t\) to represent any outcome \(x \in E\), then 
+  \(Ev \left( E,x \right) Ev \left( E,t \right)\) for all \(x\).&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;An interesting part of the principle of sufficiency is the part of &lt;strong&gt;derivation&lt;/strong&gt; 
+because such word can signify many possibles way to derive the experiment. Thus, 
+a sufficient statistics can be seen as a connection between any experiments that 
+could be generated. If we decide to go Bayesian, and we have a distribution based on 
+\(E'\) called \(f_{E'}\), we could say&lt;/p&gt;
+
+\[p_{E'}\left(x\right \vert \theta') = p_{E'}\left(t \vert \theta' \right) = p_{E'}\left(t \right)\]
+
+&lt;p&gt;Thus, if this \(t\) is found at the experiment \(E\), Is there an interest to do an extension? After all,
+once we know the \(t\) we have a good summary of the data. Making any interest on making an extension of \(E\) 
+to diminish greatly given the cost of such experiments. For example, you could be a company storing data
+about errors in manufacturing, and you could decide to build an estimator about such errors. It seems to be that
+you could be quite happy given that you could believe that such estimator is sufficient. However, somebody, as
+always, comments that given that the the production lines do not repeat models, How such sufficient statistic can exist?
+Yes, it exist for the past and present data samples, but not for the future data samples.  Such situation is 
+quite problematic, given that the &lt;strong&gt;Holly Grail&lt;/strong&gt; of estimation, from the Gaussian point of view, 
+is to be able to summarize the data.&lt;/p&gt;
+
+&lt;p&gt;Actually, Pitman–Koopman–Darmois theorem points to such problem. This theorem restricts sufficiency to the 
+exponential family. But as anybody can testify, chaotic events, tend to point to a non-Gaussian Universe i.e the variance
+simply is not bounded. A natural question arises, under such situations, How well the Likelihood principle can work? 
+Is there a way to measure &lt;strong&gt;well&lt;/strong&gt;? A fascinating problem to say the least.&lt;/p&gt;</content><author><name></name></author><summary type="html">The likelihood principle formalized by Birnbaum in his famous theorem</summary></entry><entry><title type="html">The Beginning</title><link href="http://localhost:4000/2020/05/26/Machine-Learning.html" rel="alternate" type="text/html" title="The Beginning" /><published>2020-05-26T00:00:00-05:00</published><updated>2020-05-26T00:00:00-05:00</updated><id>http://localhost:4000/2020/05/26/Machine-Learning</id><content type="html" xml:base="http://localhost:4000/2020/05/26/Machine-Learning.html">&lt;h1 id=&quot;long-ago-evolution-gave-us-the-enchanted-loom-now-we-are-looking-for-a-companion-beyond-de-lonely-universe&quot;&gt;“Long ago evolution gave us the enchanted loom, now we are looking for a companion beyond de lonely universe”&lt;/h1&gt;
+
+&lt;p&gt;My intention with this page is to post my thoughts, classes, notes and projects about these ideas:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Machine Learning
+- Deep Learning
+- Artificial Intelligence
+- Computational Mathematics 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Because at the end the search for Artificial Intelligence is to use applied mathematics to understand the universe. Therefore, I am planning to 
+add thoughts and mathematical equations about these issues.&lt;/p&gt;</content><author><name></name></author><summary type="html">“Long ago evolution gave us the enchanted loom, now we are looking for a companion beyond de lonely universe”</summary></entry></feed>

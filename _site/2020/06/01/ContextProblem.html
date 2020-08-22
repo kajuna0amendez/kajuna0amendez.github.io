@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Applied Mathematics and the Problem of Context | Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems</title>
+<meta name="generator" content="Jekyll v4.0.1" />
+<meta property="og:title" content="Applied Mathematics and the Problem of Context" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Recently, I got into a discussion with a person from telecomunications on the subject of context. Context? Yes, the bothersome problem on the subject of Applied Math. Wait a minute, you will say What? I know is quite annoying to ask about context. Let me explain, what happens in education is that you were taught that math was basically an immobile object… always true and eternal… which is true if you talk about the purist world of concepts beyond physical laws and constraints. Yes the parallelogram rule is always true, but as Goedel proved long ago in his theorem [1]:" />
+<meta property="og:description" content="Recently, I got into a discussion with a person from telecomunications on the subject of context. Context? Yes, the bothersome problem on the subject of Applied Math. Wait a minute, you will say What? I know is quite annoying to ask about context. Let me explain, what happens in education is that you were taught that math was basically an immobile object… always true and eternal… which is true if you talk about the purist world of concepts beyond physical laws and constraints. Yes the parallelogram rule is always true, but as Goedel proved long ago in his theorem [1]:" />
+<link rel="canonical" href="http://localhost:4000/2020/06/01/ContextProblem.html" />
+<meta property="og:url" content="http://localhost:4000/2020/06/01/ContextProblem.html" />
+<meta property="og:site_name" content="Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-06-01T00:00:00-05:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/06/01/ContextProblem.html"},"url":"http://localhost:4000/2020/06/01/ContextProblem.html","headline":"Applied Mathematics and the Problem of Context","dateModified":"2020-06-01T00:00:00-05:00","datePublished":"2020-06-01T00:00:00-05:00","description":"Recently, I got into a discussion with a person from telecomunications on the subject of context. Context? Yes, the bothersome problem on the subject of Applied Math. Wait a minute, you will say What? I know is quite annoying to ask about context. Let me explain, what happens in education is that you were taught that math was basically an immobile object… always true and eternal… which is true if you talk about the purist world of concepts beyond physical laws and constraints. Yes the parallelogram rule is always true, but as Goedel proved long ago in his theorem [1]:","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/MachineLearning/">Machine Learning</a><a class="page-link" href="/DeepLearning/">Deep Learning</a><a class="page-link" href="/ArtificialIntelligence/">Artificial Intelligence</a><a class="page-link" href="/AnalysisAlgorithms/">Analysis of Algorithms</a><a class="page-link" href="/LinearAlgebra/">Linear Algebra for AI</a><a class="page-link" href="/Probability/">Probability for AI</a><a class="page-link" href="/Optimization/">Optimization for AI</a><a class="page-link" href="/Cython/">Cython and Numpy programming</a><a class="page-link" href="/Projects/">Personal Projects</a><a class="page-link" href="/TechnicalPapers/">Technical Papers</a><a class="page-link" href="/Articles/">Publications</a><a class="page-link" href="/Students/">Past Students</a><a class="page-link" href="/Bio/">About Us</a></div>
+      </nav></div>
+</header>
+
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Applied Mathematics and the Problem of Context</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-06-01T00:00:00-05:00" itemprop="datePublished">Jun 1, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Recently, I got into a discussion with a person from telecomunications on the subject of context. Context? Yes, the bothersome problem 
+on the subject of Applied Math. Wait a minute, you will say What? I know is quite annoying to ask about context. Let me explain, 
+what happens in education is that you were taught that math was basically an immobile object… always true and eternal… which is true
+if you talk about the purist world of concepts beyond physical laws and constraints. Yes the parallelogram rule is always true, but as 
+Goedel proved long ago in his theorem [1]:</p>
+
+<ul>
+  <li>
+    <p>Theorem of Incompleteness</p>
+
+    <p>Any consistent formal system \(F\) within which a certain amount of elementary arithmetic can be carried out 
+  is incomplete; i.e., there are statements of the language of \(F\) which can neither be proved nor disproved in \(F\).</p>
+  </li>
+</ul>
+
+<p>But you can say, but there is a proof of it? What are you talking about? Then, I say, yes!! You are correct, if you are in a Euclidean Space. 
+The ball falls… you have a context… your space is a simple hyperplane no singularities or deformations on it. It is the infamous context which you cannot
+prove or disprove that your really live on it. Then, you finally understand my comment about the concept space of ideas. There everything is fine pure and perfect!
+But in applied math, context is everything and important it is. For example, not for nothing, the count of Buffon went to throw a coin thousand of times
+over a floor covered with identically shaped tiles. After all, the math for probability was not usable, if it was not able to describe the results of such
+experiments. Thus, we propose the following baseline:</p>
+
+<ul>
+  <li>
+    <p>Remark</p>
+
+    <p>A problem in the real world forces a set of variables \(X\) in a non-deterministic and non-smooth way in a series of
+  non-deterministic and non-smooth set operators \(D_f\).</p>
+  </li>
+</ul>
+
+<p>Given that our system of sensors is limited, knowing  such variables is limited in many ways. 
+Thus, we define a sensor as a function between our smooth variables and the function \(f\in D_f\):</p>
+
+<ul>
+  <li>
+    <p>Definition (Interface)</p>
+
+    <p>A sensor is a interface between a function \(f \in D_f\) and a smooth function \(g \in S_g\):</p>
+
+\[\mathcal{G}:D_{f}\rightarrow S_{g}\]
+  </li>
+</ul>
+
+<p>Here, the smooth function has a small variance making possible to be interpretable. There, an interpretable function can well-possed or ill-possed [2] given that
+even ill-possed functions cab be regularized increasing their interpretability.  You can think of such functions as smoothing  over a high variance mapping.</p>
+
+<p><img src="/assets/math_files/RealityVsInterface.png" alt="Interface" height="50%" width="50%" /></p>
+
+<p>Making possible to say that a sensor will always filter most of the data given the variability of the reality operator which still depends on other variables 
+which could be high variable or not. Basically, the variance of the basic variables are being tamed by the reality operator. Therefore, we have the following definition:</p>
+
+<ul>
+  <li>
+    <p>Definition (Context):</p>
+
+    <p>The context is the interpretation of the data coming from the sensor. Such interpretation is based in a  model \(M\), mathematical or not, 
+ with a certain bias based in prior knowledge on previous contexts.</p>
+  </li>
+</ul>
+
+<p>Thus, What kind of context are we getting at the end of the pipeline? Given that we are in the realm of the possible, we have to possibilities:</p>
+
+<ol>
+  <li>The Reality operator is a perfect shield between the possible and reality</li>
+  <li>The Reality operator can give hints of the possible</li>
+</ol>
+
+<p>Therefore, the context is affected by these two ideas, but given that the context can evolve from civilization to civilization, the second possibility is the most
+likely. However, the reality operator is not easily accessible by simple tools as more of the reality operator is explored deeper and deeper.</p>
+
+<p>How is this context, not the reality operator, impacting the field of Mathematics? After all, as we pointed out, pure math tends to live on the 
+spaces of ideas beyond the context. Therefore, only Applied Mathematics depends on such context, and its impact is two fold:</p>
+
+<ol>
+  <li>If the model does nos predict the context… it is no more Applied Mathematics but pure Math as for example String Theory [3].</li>
+  <li>The data from the context is pushing forward the development of Applied Mathematics, given the need to understand and predict the context.</li>
+</ol>
+
+<p>There you have one of its greatest drawbacks, given our limitations on building new sensors, Applied Mathematics requires an access to the context
+to be able to validate its ideas. However,  Applied Mathematics is still lacking on something fundamental, basically to understand the Reality Operator, and although some
+attempts have been tried, this operator stays still the greatest riddle of the human history.</p>
+
+<ol>
+  <li>Raatikainen, Panu. “Gödel’s incompleteness theorems.” (2013).</li>
+  <li>Wahba, Grace. “Three topics in ill-posed problems.” Inverse and ill-posed problems. Academic Press, 1987. 37-51.</li>
+  <li>Woit, P “Not Even Wrong: The Failure of String Theory and the Search for Unity in Physical Law
+Author”</li>
+</ol>
+
+  </div><a class="u-url" href="/2020/06/01/ContextProblem.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Andres Mendez-Vazquez, A Personal Exploration about Intelligent Systems</li><li><a class="u-email" href="mailto:kajuna0kajuna@gmail.com">kajuna0kajuna@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/kajuna0amendez"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">kajuna0amendez</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- for mathjax support -->
+
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+
+</body>
+
+</html>
