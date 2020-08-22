@@ -44,8 +44,10 @@
     <p>These are my attempts to write a series of slides on the many topic of ML.</p>
 
 <ol>
-  <li>
-    <p><strong>Introduction</strong> <a href="/assets/ml_files/01_Introduction.pdf">slides</a></p>
+  <li><strong>Introduction</strong> <a href="/assets/ml_files/01_Introduction.pdf">slides</a>
+    <ul>
+      <li>Why Learning?</li>
+    </ul>
   </li>
   <li><strong>The Basic Ideas of Learning</strong> <a href="/assets/ml_files/02_A_Basic_Introduction_to_Learning.pdf">slides</a>
     <ul>
@@ -151,7 +153,7 @@
       <li>The Three Problems</li>
     </ul>
 
-\[\]
+\[\hat{L}\left(\lambda,\lambda^{n}\right)= \hat{Q}\left(\lambda,\lambda^{n}\right)-\lambda_{\pi}\left(\sum_{i=1}^{N}\pi_{i}-1\right)-\sum_{i=1}^{N}\lambda_{a_{i}}\left(\sum_{j=1}^{N}a_{ij}-1\right)-\sum_{i=1}^{N}\lambda_{b_{i}}\left(\sum_{k=1}^{M}b_{i}\left(k\right)-1\right)\]
   </li>
   <li><strong>Support Vector Machines</strong> <a href="/assets/ml_files/12_Support_Vector_Machines.pdf">slides</a>
     <ul>
@@ -168,6 +170,8 @@
       <li>The first discrete neural network</li>
       <li>The Idea of Learning</li>
     </ul>
+
+\[y\left(i\right)=v\left(i\right)=\sum_{i=1}^{m}w_{k}\left(i\right)x_{k}\left(i\right)\]
   </li>
   <li><strong>Multilayer Perceptron</strong> <a href="/assets/ml_files/15_Multilayer_Perceptron.pdf">slides</a>
     <ul>
@@ -176,11 +180,15 @@
       <li>Backpropagation for the new architecture</li>
       <li>Heuristic to improve the performance</li>
     </ul>
+
+\[\triangle w_{kj}=\eta\delta_{k}y_{j}=\eta\left(t_{k}-z_{k}\right)f'\left(net_{k}\right)y_{j}\]
   </li>
   <li><strong>The Universal Representation Theorem</strong> <a href="/assets/ml_files/16_Universal_Approximation_Theorem.pdf">slides</a>
     <ul>
       <li>Cybenko Theorem</li>
     </ul>
+
+\[G\left(\boldsymbol{x}\right)=\sum_{j=1}^{N}\alpha_{j}f\left(\boldsymbol{w}^{T}\boldsymbol{x}+\theta_{j}\right)\]
   </li>
   <li><strong>Convolutional Networks</strong> <a href="/assets/ml_files/17_Convolutional_Networks.pdf">slides</a>
     <ul>
@@ -188,6 +196,8 @@
       <li>How convolutions can solve this problems</li>
       <li>Backpropagation on the CNN</li>
     </ul>
+
+\[\left(f*g\right)\left[x,y\right]=\sum_{k=-n}^{n}\sum_{l=-n}^{n}f\left(k,l\right)g\left(x-k,y-l\right)\]
   </li>
   <li><strong>Regression and Classification Trees</strong> <a href="/assets/ml_files/18_Supervised_Decision_Trees.pdf">slides</a>
     <ul>
@@ -233,22 +243,42 @@
       <li>Beyond the metric space</li>
     </ul>
   </li>
-  <li>
-    <p><strong>Hierarchical Clustering and Clustering for Large Data Sets</strong>  <a href="/assets/ml_files/24_Hierarchical_Clustering_Large_Data_Set_Clustering.pdf">slides</a></p>
+  <li><strong>Hierarchical Clustering and Clustering for Large Data Sets</strong>  <a href="/assets/ml_files/24_Hierarchical_Clustering_Large_Data_Set_Clustering.pdf">slides</a>
+    <ul>
+      <li>Introduction</li>
+      <li>The idea of nesting</li>
+      <li>Bottom-Up Strategy</li>
+      <li>Top-Down Strategy</li>
+      <li>Large Data Set Clustering: CURE and DBASE</li>
+    </ul>
   </li>
-  <li>
-    <p><strong>Cluster Validity</strong> <a href="/assets/ml_files/25_Unsupervised_Cluster_Validity.pdf">slides</a></p>
+  <li><strong>Cluster Validity</strong> <a href="/assets/ml_files/25_Unsupervised_Cluster_Validity.pdf">slides</a>
+    <ul>
+      <li>An Introduction to cluster validity</li>
+    </ul>
   </li>
-  <li>
-    <p><strong>Associative Rules</strong> <a href="/assets/ml_files/26_Associative_Rules.pdf">slides</a></p>
+  <li><strong>Associative Rules</strong> <a href="/assets/ml_files/26_Associative_Rules.pdf">slides</a>
+    <ul>
+      <li>From the era of warehouses, finding frequent rules in databases</li>
+    </ul>
   </li>
-  <li>
-    <p><strong>Locality Sensitive Hashing</strong> <a href="/assets/ml_files/27_Locality_Sensitive_Hashing.pdf">slides</a></p>
+  <li><strong>Locality Sensitive Hashing</strong> <a href="/assets/ml_files/27_Locality_Sensitive_Hashing.pdf">slides</a>
+    <ul>
+      <li>Hashing to find similar elements</li>
+    </ul>
   </li>
-  <li>
-    <p><strong>Page Rank</strong> <a href="/assets/ml_files/28_PageRank.pdf">slides</a></p>
+  <li><strong>Page Rank</strong> <a href="/assets/ml_files/28_PageRank.pdf">slides</a>
+    <ul>
+      <li>The Web as a Stochastic Matrix</li>
+      <li>The Ranking as probabilistic vector</li>
+      <li>The Power Method for finding the vector distribution</li>
+    </ul>
   </li>
-  <li><strong>Semi-supervised Learning</strong> <a href="/assets/ml_files/29_Semisupervised_Learning.pdf">slides</a></li>
+  <li><strong>Semi-supervised Learning</strong> <a href="/assets/ml_files/29_Semisupervised_Learning.pdf">slides</a>
+    <ul>
+      <li>The Basic of Semi-supervised Learning</li>
+    </ul>
+  </li>
 </ol>
 
 <h1 id="book-chapters-on-machine-learning">Book Chapters on Machine Learning</h1>
