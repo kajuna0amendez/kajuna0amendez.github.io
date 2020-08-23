@@ -146,6 +146,8 @@
       <li>The Confusion Matrix</li>
       <li>The ROC curve</li>
     </ul>
+
+    <p><img src="/assets/ml_files/images/ROC_Curve.png" alt="Interface" height="30%" width="30%" /></p>
   </li>
   <li><strong>Hidden Markov Models</strong> <a href="/assets/ml_files/13_Hidden_Markov_Models.pdf">slides</a>
     <ul>
@@ -205,6 +207,8 @@
       <li>The Classification Tree</li>
       <li>Entropy to build the Classification Tree</li>
     </ul>
+
+\[\Delta I\left(t\right)=I\left(t\right)-\frac{N_{tY}}{N_{t}}I\left(t_{Y}\right)-\frac{N_{tN}}{N_{t}}I\left(t_{N}\right)\]
   </li>
   <li><strong>Vapnik-Chervonenkis Dimensions</strong> <a href="/assets/ml_files/19_Vapnik_Chervonenkis_Dimension.pdf">slides</a>
     <ul>
@@ -213,6 +217,8 @@
       <li>The Inequality</li>
       <li>How to measure the power of a classifier</li>
     </ul>
+
+\[E_{in}\left(g\right)&lt;E_{out}\left(g\right)+\sqrt{\frac{2k}{N}\ln\frac{eN}{k}}+\sqrt{\frac{1}{2N}\ln\frac{1}{\delta}}\]
   </li>
   <li><strong>Combining Models and Boosting</strong>  <a href="/assets/ml_files/20_Combining_Models.pdf">slides</a>
     <ul>
@@ -220,13 +226,17 @@
       <li>Mixture of Experts</li>
       <li>AdaBoosting</li>
     </ul>
+
+    <p><img src="/assets/ml_files/images/alpha_m.png" alt="Interface" height="30%" width="30%" /></p>
   </li>
   <li><strong>Boosting Trees, XBoost and Random Forrest</strong> <a href="/assets/ml_files/21_Boosting_Trees_and_Random_Forest.pdf">slides</a>
     <ul>
       <li>Using Boosting in Trees</li>
-      <li>Taylor approximation for Boosting Trees</li>
       <li>Random Forrest</li>
+      <li>Taylor approximation for Boosting Trees</li>
     </ul>
+
+\[\mathcal{L}^{\left(t\right)}\simeq\sum_{i=1}^{N}\left[g_{i}f_{t}\left(\boldsymbol{x}_{i}\right)+\frac{1}{2}h_{i}f_{t}^{2}\left(\boldsymbol{x}_{i}\right)\right]+\Omega\left(f_{t}\right)\]
   </li>
   <li><strong>Introduction to Clustering</strong>  <a href="/assets/ml_files/22_Introduction_Clustering.pdf">slides</a>
     <ul>
@@ -234,6 +244,8 @@
       <li>The need for a similarity for the data</li>
       <li>The different features</li>
     </ul>
+
+    <p><img src="/assets/ml_files/images/clustering.png" alt="Interface" height="30%" width="30%" /></p>
   </li>
   <li><strong>K-Means, K-Center and K-Meoids</strong>  <a href="/assets/ml_files/23_KMeans_KCenter_KMeoids.pdf">slides</a>
     <ul>
@@ -242,6 +254,8 @@
       <li>Using Approximation Algorithms for Clustering</li>
       <li>Beyond the metric space</li>
     </ul>
+
+\[\sum_{k=1}^{N}\sum_{i:\boldsymbol{x}_{i}\in C_{k}}\left\Vert \boldsymbol{x}_{i}-\boldsymbol{\mu}_{k}\right\Vert ^{2}=\sum_{k=1}^{N}\sum_{i:\boldsymbol{x}_{i}\in C_{k}}\left(\boldsymbol{x}_{i}-\boldsymbol{\mu}_{k}\right)^{T}\left(\boldsymbol{x}_{i}-\boldsymbol{\mu}_{k}\right)\]
   </li>
   <li><strong>Hierarchical Clustering and Clustering for Large Data Sets</strong>  <a href="/assets/ml_files/24_Hierarchical_Clustering_Large_Data_Set_Clustering.pdf">slides</a>
     <ul>
@@ -251,20 +265,30 @@
       <li>Top-Down Strategy</li>
       <li>Large Data Set Clustering: CURE and DBASE</li>
     </ul>
+
+    <p><img src="/assets/ml_files/images/dbscan.png" alt="Interface" height="30%" width="30%" /></p>
   </li>
   <li><strong>Cluster Validity</strong> <a href="/assets/ml_files/25_Unsupervised_Cluster_Validity.pdf">slides</a>
     <ul>
       <li>An Introduction to cluster validity</li>
     </ul>
+
+\[W\left(\theta\right)=P\left(q\in\overline{D}_{\rho}\vert\theta\in\Theta_{1}\right)\]
   </li>
   <li><strong>Associative Rules</strong> <a href="/assets/ml_files/26_Associative_Rules.pdf">slides</a>
     <ul>
       <li>From the era of warehouses, finding frequent rules in databases</li>
     </ul>
+
+    <p><img src="/assets/ml_files/images/PowerSet.png" alt="Interface" height="30%" width="30%" /></p>
   </li>
   <li><strong>Locality Sensitive Hashing</strong> <a href="/assets/ml_files/27_Locality_Sensitive_Hashing.pdf">slides</a>
     <ul>
-      <li>Hashing to find similar elements</li>
+      <li>
+        <p>Hashing to find similar elements</p>
+
+        <p><img src="/assets/ml_files/images/similarity.png" alt="Interface" height="40%" width="40%" /></p>
+      </li>
     </ul>
   </li>
   <li><strong>Page Rank</strong> <a href="/assets/ml_files/28_PageRank.pdf">slides</a>
@@ -273,11 +297,16 @@
       <li>The Ranking as probabilistic vector</li>
       <li>The Power Method for finding the vector distribution</li>
     </ul>
+
+\[A=\beta M+(1-\beta)\frac{1}{n}\mathbf{e}\cdot\mathbf{e^{T}}\]
   </li>
   <li><strong>Semi-supervised Learning</strong> <a href="/assets/ml_files/29_Semisupervised_Learning.pdf">slides</a>
     <ul>
       <li>The Basic of Semi-supervised Learning</li>
+      <li>Using it on document labeling</li>
     </ul>
+
+\[P\left(\boldsymbol{x}_{i}\vert\theta\right)=P\left(\left|\boldsymbol{x}_{i}\right|\right)\sum_{j\in\left\{ 1,2,...,M\right\} }P\left(c_{j}\vert\theta\right)\prod_{w_{t}\in\mathfrak{X}}P\left(w_{t}\vert c_{j},\theta\right)^{x_{it}}\]
   </li>
 </ol>
 
