@@ -53,7 +53,7 @@
       <li>Vanishing Gradient</li>
     </ul>
 
-\[\]
+    <p><img src="/assets/nn_files/images/ml_vanishing_gradient.png" alt="Interface" height="60%" width="60%" /></p>
   </li>
   <li><strong>Neural Networks as graphs</strong>
     <ul>
@@ -63,7 +63,7 @@
       <li>Representing knowledge on a Neural Network</li>
     </ul>
 
-\[\]
+    <p><img src="/assets/nn_files/images/recurrent_nn.png" alt="Interface" height="30%" width="30%" /></p>
   </li>
   <li><strong>Learning</strong>  <a href="/assets/nn_files/02_Learning_Process.pdf">Slides</a>
     <ul>
@@ -75,7 +75,10 @@
       <li>Boltzmann Learning</li>
     </ul>
 
-\[\]
+\[f\left(x_{t}\right)=\begin{cases}
+w_{t}\times\sigma\left(x_{t}\right) &amp; \mbox{ if }x_{t}&gt;t\mbox{ and }w_{t+1}=\alpha w_{t}\mbox{ with \ensuremath{\alpha&gt;1}}\\
+w_{t}\times\sigma\left(x_{t}\right) &amp; \mbox{ if }x_{t}&gt;t\mbox{ and }w_{t+1}=\alpha w_{t}\mbox{ with \ensuremath{\alpha&lt;1}}
+\end{cases}\]
   </li>
   <li><strong>Perceptron</strong> <a href="/assets/nn_files/03_Introduction_Single_Layer_Perceptron.pdf">Slides</a>
     <ul>
@@ -84,7 +87,7 @@
       <li>Rosenblatt’s algorithm</li>
     </ul>
 
-\[\]
+    <p><img src="/assets/nn_files/images/perceptron.png" alt="Interface" height="60%" width="60%" /></p>
   </li>
   <li><strong>Multilayer Perceptron</strong> <a href="/assets/nn_files/04_Multilayer_Perceptron.pdf">Slides</a>
     <ul>
@@ -95,7 +98,7 @@
       <li>The Universal Approximation Theorem</li>
     </ul>
 
-\[\]
+    <p><img src="/assets/nn_files/images/MultiLayerPerceptron.png" alt="Interface" height="40%" width="40%" /></p>
   </li>
   <li><strong>Deep Forward Networks</strong> <a href="/assets/nn_files/05_DeepForward_Networks.pdf">Slides</a>
     <ul>
@@ -103,10 +106,11 @@
       <li>From simple features to complex ones</li>
       <li>Component of Deep Forward Architectures</li>
       <li>The Problems with the Gradient in Deeper Architectures</li>
-      <li>Some ways to try such problems</li>
+      <li>RELU a possible solution</li>
+      <li>Examples of Deep Architectures: Generative, Residual, Autoencoders, Boltzmann Machines, etc</li>
     </ul>
 
-\[\]
+    <p><img src="/assets/nn_files/images/autoencoders.png" alt="Interface" height="40%" width="40%" /></p>
   </li>
   <li><strong>The idea of Back-propagation and Automatic Differentiation</strong> <a href="/assets/nn_files/06_Backpropagation_Automatic_Differentiation.pdf">Slides</a>
     <ul>
@@ -119,7 +123,16 @@
       <li>Basic Implementation of Automatic Differentiation</li>
     </ul>
 
-\[\]
+\[A_{i}\equiv\left[\begin{array}{ccccccc}
+1 &amp; 0 &amp; \ldots &amp; 0 &amp; \ldots &amp; \ldots &amp; 0\\
+0 &amp; 1 &amp; \ldots &amp; 0 &amp; \ldots &amp; \ldots &amp; 0\\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \ldots &amp; \ldots\\
+0 &amp; 0 &amp; \ldots &amp; 1 &amp; \ldots &amp; \ldots &amp; 0\\
+c_{i1-n} &amp; c_{i2-n} &amp; \ldots &amp; c_{ii-n} &amp; \ldots &amp; \ldots &amp; 0\\
+0 &amp; 0 &amp; \ldots &amp; 0 &amp; 1 &amp; \ldots &amp; 0\\
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \vdots\\
+0 &amp; 0 &amp; \ldots &amp; \ldots &amp; \ldots &amp; \ldots &amp; 1
+\end{array}\right]\in\mathbb{R}^{\left(n+l\right)\times\left(n+l\right)}\]
   </li>
   <li><strong>Stochastic Gradient Descent</strong> <a href="/assets/nn_files/07_Stochastic_Gradient_Descent.pdf">Slides</a>
     <ul>
@@ -135,7 +148,7 @@
       <li>ADAM</li>
     </ul>
 
-\[\]
+\[\sum_{k=1}^{t}\frac{\widehat{m}_{k}}{\left(\sqrt{\widehat{v}_{k}}\right)}=\sum_{k=1}^{t}\frac{\frac{m_{k}}{\left(1-\beta_{1}^{k}\right)}}{\left(\sqrt{\frac{v_{k}}{\left(1-\beta_{2}^{k}\right)}}\right)}=\sum_{k=1}^{t}\frac{\left(1-\beta_{2}^{k}\right)^{\frac{1}{2}}}{\left(1-\beta_{1}^{k}\right)}\times\frac{m_{k}}{\sqrt{v_{k}}}\]
   </li>
   <li><strong>Introduction to Recurrent Neural Networks</strong>  <a href="/assets/nn_files/08_Recurrent_Neural_Networks.pdf">Slides</a>
     <ul>
@@ -146,7 +159,7 @@
       <li>Can we avoid the BPTT?</li>
     </ul>
 
-\[\]
+    <p><img src="/assets/nn_files/images/unfolding.png" alt="Interface" height="60%" width="60%" /></p>
   </li>
   <li><strong>Loss Functions</strong>
     <ul>
@@ -156,9 +169,11 @@
       <li>The problem with it</li>
       <li>The Logistic and 0-1 Loss</li>
       <li>Alternatives</li>
+      <li>More Complex Loss Functions</li>
+      <li>Adaptive Loss Functions</li>
     </ul>
 
-\[\]
+\[L=-\sum_{i=1}^{C}z_{i}\log\left(f\left(y_{i}\right)\right)=-log\left(\frac{\exp\left\{ y_{p}\right\} }{\sum_{j=1}^{C}\exp\left\{ y_{p}\right\} }\right)\]
   </li>
   <li><strong>Regularization in Deep Neural Networks</strong> <a href="/assets/nn_files/09_Regularization_in_Neural_Networks.pdf">Slides</a>
     <ul>
@@ -173,7 +188,7 @@
       </li>
     </ul>
 
-\[\]
+\[y_{i}=BN_{\gamma,\beta}\left(\boldsymbol{x}_{i}\right)\]
   </li>
   <li><strong>Convolutional Networks</strong> <a href="/assets/nn_files/10_Convolutional_Networks.pdf">Slides</a>
     <ul>
@@ -185,7 +200,7 @@
       <li>An Example</li>
     </ul>
 
-\[\]
+    <p><img src="/assets/nn_files/images/convolutions.png" alt="Interface" height="50%" width="50%" /></p>
   </li>
   <li>
     <p><strong>Boltzmann Machines</strong></p>
