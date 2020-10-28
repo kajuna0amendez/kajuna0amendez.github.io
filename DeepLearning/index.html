@@ -3,9 +3,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Deep Learning | Andres Mendez-Vazquez, An Exploration about Intelligent Systems</title>
+<title>Introduction to Deep Learning | Andres Mendez-Vazquez, An Exploration about Intelligent Systems</title>
 <meta name="generator" content="Jekyll v4.0.1" />
-<meta property="og:title" content="Deep Learning" />
+<meta property="og:title" content="Introduction to Deep Learning" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics" />
 <meta property="og:description" content="Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics" />
@@ -13,7 +13,7 @@
 <meta property="og:url" content="http://localhost:4000/DeepLearning/" />
 <meta property="og:site_name" content="Andres Mendez-Vazquez, An Exploration about Intelligent Systems" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"http://localhost:4000/DeepLearning/","headline":"Deep Learning","description":"Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"http://localhost:4000/DeepLearning/","headline":"Introduction to Deep Learning","description":"Exploring subjects on Machine Learning, Deep Learning and Computational Mathematics","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Andres Mendez-Vazquez, An Exploration about Intelligent Systems" /></head>
 <body><header class="site-header" role="banner">
@@ -28,7 +28,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/MachineLearning/">Introduction to Machine Learning</a><a class="page-link" href="/AdvancedMachineLearning/">Advanced Machine Learning</a><a class="page-link" href="/MLBusiness/">Machine Learning and Business</a><a class="page-link" href="/DeepLearning/">Deep Learning</a><a class="page-link" href="/Manifoldlearning/">Manifold Learning and Information Geometry</a><a class="page-link" href="/ArtificialIntelligence/">Introduction to Artificial Intelligence</a><a class="page-link" href="/AnalysisAlgorithms/">Analysis of Algorithms</a><a class="page-link" href="/LinearAlgebra/">Linear Algebra for AI</a><a class="page-link" href="/Probability/">Probability for AI</a><a class="page-link" href="/Optimization/">Optimization for AI</a><a class="page-link" href="/Projects/">Personal Projects</a><a class="page-link" href="/TechnicalPapers/">Technical Papers</a><a class="page-link" href="/Articles/">Publications</a><a class="page-link" href="/Students/">Past Students</a><a class="page-link" href="/Bio/">About Us</a></div>
+        <div class="trigger"><a class="page-link" href="/MachineLearning/">Introduction to Machine Learning</a><a class="page-link" href="/AdvancedMachineLearning/">Advanced Machine Learning</a><a class="page-link" href="/MLBusiness/">Machine Learning and Business</a><a class="page-link" href="/DeepLearning/">Introduction to Deep Learning</a><a class="page-link" href="/Manifoldlearning/">Introduction to Manifold Learning and Information Geometry</a><a class="page-link" href="/ArtificialIntelligence/">Introduction to Artificial Intelligence</a><a class="page-link" href="/AnalysisAlgorithms/">Introduction to Analysis of Algorithms</a><a class="page-link" href="/LinearAlgebra/">Linear Algebra for AI</a><a class="page-link" href="/Probability/">Probability for AI</a><a class="page-link" href="/Optimization/">Optimization for AI</a><a class="page-link" href="/Projects/">Personal Projects</a><a class="page-link" href="/TechnicalPapers/">Technical Papers</a><a class="page-link" href="/Articles/">Publications</a><a class="page-link" href="/Students/">Past Students</a><a class="page-link" href="/Bio/">About Us</a></div>
       </nav></div>
 </header>
 
@@ -37,7 +37,7 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Deep Learning</h1>
+    <h1 class="post-title">Introduction to Deep Learning</h1>
   </header>
 
   <div class="post-content">
@@ -161,20 +161,6 @@ c_{i1-n} &amp; c_{i2-n} &amp; \ldots &amp; c_{ii-n} &amp; \ldots &amp; \ldots &a
 
     <p><img src="/assets/nn_files/images/unfolding.png" alt="Interface" height="60%" width="60%" /></p>
   </li>
-  <li><strong>Loss Functions</strong>
-    <ul>
-      <li>The Bayesian Loss Function</li>
-      <li>Utility and loss</li>
-      <li>The Quadratic Loss</li>
-      <li>The problem with it</li>
-      <li>The Logistic and 0-1 Loss</li>
-      <li>Alternatives</li>
-      <li>More Complex Loss Functions</li>
-      <li>Adaptive Loss Functions</li>
-    </ul>
-
-\[L=-\sum_{i=1}^{C}z_{i}\log\left(f\left(y_{i}\right)\right)=-log\left(\frac{\exp\left\{ y_{p}\right\} }{\sum_{j=1}^{C}\exp\left\{ y_{p}\right\} }\right)\]
-  </li>
   <li><strong>Regularization in Deep Neural Networks</strong> <a href="/assets/nn_files/09_Regularization_in_Neural_Networks.pdf">Slides</a>
     <ul>
       <li>Bias-Variance Dilemma</li>
@@ -201,6 +187,21 @@ c_{i1-n} &amp; c_{i2-n} &amp; \ldots &amp; c_{ii-n} &amp; \ldots &amp; \ldots &a
     </ul>
 
     <p><img src="/assets/nn_files/images/convolutions.png" alt="Interface" height="50%" width="50%" /></p>
+  </li>
+  <li><strong>Loss Functions</strong> <a href="/assets/nn_files/11_Loss_Functions.pdf">Slides</a>
+    <ul>
+      <li>The Loss Functions</li>
+      <li>Hilbert Spaces</li>
+      <li>Reproducibility</li>
+      <li>The Quadratic Loss</li>
+      <li>The problem with it</li>
+      <li>The Logistic and 0-1 Loss</li>
+      <li>Alternatives</li>
+      <li>Beyond Convex Loss Functions</li>
+      <li>Conclusions</li>
+    </ul>
+
+\[L=-\sum_{i=1}^{C}z_{i}\log\left(f\left(y_{i}\right)\right)=-log\left(\frac{\exp\left\{ y_{p}\right\} }{\sum_{j=1}^{C}\exp\left\{ y_{p}\right\} }\right)\]
   </li>
   <li>
     <p><strong>Boltzmann Machines</strong></p>
