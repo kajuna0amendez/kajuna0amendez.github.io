@@ -211,7 +211,7 @@
 
     <p><img src="/assets/algo_files/images/SplitBTrees.png" alt="Interface" height="55%" width="55%" /></p>
   </li>
-  <li>Fibonacci Heaps B-Trees <a href="/assets/algo_files/16_Fibonacci_Heaps.pdf">Slides</a> <a href="/assets/algo_files/16_Notes.pdf">Notes</a>
+  <li>Fibonacci Heaps <a href="/assets/algo_files/16_Fibonacci_Heaps.pdf">Slides</a> <a href="/assets/algo_files/16_Notes.pdf">Notes</a>
     <ul>
       <li>Another version of Heaps</li>
       <li>Definition of Heaps</li>
@@ -219,68 +219,130 @@
       <li>Amortized Analysis</li>
     </ul>
 
-    <p><img src="/assets/algo_files/images/ConFibonHeaps.png" alt="Interface" height="45%" width="45%" /></p>
+    <p><img src="/assets/algo_files/images/ConFibonHeaps.png" alt="Interface" height="55%" width="55%" /></p>
   </li>
-  <li>
-    <p>Disjoint Set Representations</p>
-  </li>
-  <li>
-    <p>Graphs</p>
-  </li>
-  <li>
-    <p>Minimum Spanning Trees</p>
-  </li>
-  <li>
-    <p>Single Source Shortest Path</p>
-  </li>
-  <li>
-    <p>All-pairs Shortest Path</p>
-  </li>
-  <li>Max Flow</li>
-</ol>
+  <li>Disjoint Set Representations <a href="/assets/algo_files/17_Disjoint_Set_Representation.pdf">Slides</a> <a href="/assets/algo_files/17_Notes.pdf">Notes</a>
+    <ul>
+      <li>Represent Disjoint Sets</li>
+      <li>Two Strategies: Union by Rank and Path Compression</li>
+      <li>The use of the inverse Ackermann function</li>
+      <li>Getting \(O(m\log^* n)\) complexity for all operations</li>
+    </ul>
 
-<h3 id="string-based-algorithms">String Based Algorithms</h3>
+    <p><img src="/assets/algo_files/images/DisjointSets.png" alt="Interface" height="75%" width="75%" /></p>
+  </li>
+  <li>Graphs <a href="/assets/algo_files/18_Basic_Graph_Algorithms.pdf">Slides</a> <a href="/assets/algo_files/18_Notes.pdf">Notes</a>
+    <ul>
+      <li>Introduction</li>
+      <li>Breadth First Search</li>
+      <li>Depth First Search</li>
+      <li>Applications</li>
+    </ul>
 
-<ol>
-  <li>
-    <p>Introduction</p>
+    <p><img src="/assets/algo_files/images/KoningsbergBridges.png" alt="Interface" height="65%" width="65%" /></p>
   </li>
-  <li>
-    <p>Rabin-Karp Algorithm</p>
-  </li>
-  <li>
-    <p>State Machines</p>
-  </li>
-</ol>
+  <li>Minimum Spanning Trees <a href="/assets/algo_files/19_Minimum_Spanning_Trees.pdf">Slides</a> <a href="/assets/algo_files/19_Notes.pdf">Notes</a>
+    <ul>
+      <li>Introduction</li>
+      <li>The Cut and Light Edge idea</li>
+      <li>The Greedy Algorithms: Kruskal and Prim</li>
+    </ul>
 
-<h3 id="numerical-algorithms">Numerical Algorithms</h3>
+    <p><img src="/assets/algo_files/images/Prim.png" alt="Interface" height="65%" width="65%" /></p>
+  </li>
+  <li>Single Source Shortest Path <a href="/assets/algo_files/20_Single-Source_Shorthest_Path.pdf">Slides</a> <a href="/assets/algo_files/20_Notes.pdf">Notes</a>
+    <ul>
+      <li>Introduction</li>
+      <li>The Shortest Path Idea</li>
+      <li>The Dynamic Algorithm, Bellman-Ford</li>
+      <li>A version for Directed Acyclic Graphs</li>
+      <li>A Greedy Algorithm, Dijkstra</li>
+    </ul>
 
-<ol>
-  <li>
-    <p>Matrix Multiplication</p>
+    <p><img src="/assets/algo_files/images/SingleSourceShortestPath.png" alt="Interface" height="65%" width="65%" /></p>
   </li>
-  <li>
-    <p>Gauss Jordan</p>
-  </li>
-  <li>
-    <p>Inverse Matrix</p>
-  </li>
-  <li>
-    <p>Notes in Complexity</p>
-  </li>
-</ol>
+  <li>All-pairs Shortest Path <a href="/assets/algo_files/21_All_Pairs_Shortest_Path.pdf">Slides</a> <a href="/assets/algo_files/21_Notes.pdf">Notes</a>
+    <ul>
+      <li>Using the old algorithms to solve the problem</li>
+      <li>Trying to improve</li>
+      <li>The Floyd-Warshall Algorithm</li>
+      <li>The Johnson’s Algorithm</li>
+    </ul>
 
-<h3 id="notes-in-multi-threading-algorithms">Notes in Multi-threading Algorithms</h3>
+    <p><img src="/assets/algo_files/images/FloydWarshall.png" alt="Interface" height="65%" width="65%" /></p>
+  </li>
+  <li>Max Flow <a href="/assets/algo_files/22_Max_Flow.pdf">Slides</a> <a href="/assets/algo_files/22_Notes.pdf">Notes</a>
+    <ul>
+      <li>Flows in Graphs</li>
+      <li>Flow properties</li>
+      <li>The Ford-Fulkerson Mehtod</li>
+      <li>Minimal-cut</li>
+      <li>Improving the Ford-Fulkerson, the Edmond-Karp Algorithm</li>
+      <li>Applications</li>
+    </ul>
 
-<ol>
-  <li>
-    <p>Symmetric Multiprocessor (SMP)</p>
+    <p><img src="/assets/algo_files/images/Residual.png" alt="Interface" height="65%" width="65%" /></p>
   </li>
-  <li>
-    <p>The DAG</p>
+  <li>Matrix Algorithms <a href="/assets/algo_files/23_Matrix_Algorithms.pdf">Slides</a> <a href="/assets/algo_files/23_Notes.pdf">Notes</a>
+    <ul>
+      <li>Matrix Operations</li>
+      <li>Improving the Matrix Multiplication</li>
+      <li>Solving System of Linear Equations</li>
+      <li>Applications</li>
+    </ul>
+
+\[\left(\begin{array}{cc}
+1 &amp; 0\\
+\frac{\boldsymbol{v}}{a_{11}} &amp; I_{n-1}
+\end{array}\right)\left(\begin{array}{cc}
+a_{11} &amp; \boldsymbol{w}^{T}\\
+0 &amp; \underset{\mbox{Schur Complement}}{\underbrace{A'-\frac{\boldsymbol{v}\boldsymbol{w}^{T}}{a_{11}}}}
+\end{array}\right)\]
   </li>
-  <li>
-    <p>Algorithms</p>
+  <li>Multi-threaded Algorithms <a href="/assets/algo_files/24_Multithreaded_Algorithms.pdf">Slides</a> <a href="/assets/algo_files/24_Notes.pdf">Notes</a>
+    <ul>
+      <li>Why Multi-threading?</li>
+      <li>Model</li>
+      <li>DAG</li>
+      <li>Performance Measures</li>
+      <li>Parallel Laws</li>
+      <li>Examples</li>
+    </ul>
+  </li>
+  <li>String Matching <a href="/assets/algo_files/25_String_Matching.pdf">Slides</a> <a href="/assets/algo_files/25_Notes.pdf">Notes</a>
+    <ul>
+      <li>String Matching Basics</li>
+      <li>Naive Algorithms</li>
+      <li>Rabin-Karp</li>
+      <li>Other Algorithms</li>
+      <li>etc</li>
+    </ul>
+  </li>
+  <li>Computational Geometry <a href="/assets/algo_files/26_Computational_Geometry.pdf">Slides</a> <a href="/assets/algo_files/26_Notes.pdf">Notes</a>
+    <ul>
+      <li>What is Computational Geometry?</li>
+      <li>Representation of Geometries</li>
+      <li>Line-Segment Properties</li>
+      <li>Classic Problems</li>
+    </ul>
+  </li>
+  <li>NP-Complete Problems <a href="/assets/algo_files/27_NP_Completness.pdf">Slides</a> <a href="/assets/algo_files/27_Notes.pdf">Notes</a>
+    <ul>
+      <li>The Polynomial Time</li>
+      <li>Structure of the Polynomial Time</li>
+      <li>Polynomial Time Verification</li>
+      <li>Reducibility</li>
+      <li>NP-Completeness</li>
+      <li>The Basic NP-Problems</li>
+    </ul>
+  </li>
+  <li>Dealing with NP-Complete Problems <a href="/assets/algo_files/228_Dealing_with_NP_Problems.pdf">Slides</a>
+    <ul>
+      <li>The Dilemma</li>
+      <li>Backtracking</li>
+      <li>Branch and Bound</li>
+      <li>Approximation Algorithms</li>
+    </ul>
   </li>
 </ol>
 
@@ -288,25 +350,20 @@
 
 <ol>
   <li>
-    <p>Basic Computational Geometry</p>
-  </li>
-  <li>
     <p>KD-Trees</p>
   </li>
   <li>
     <p>NNDescent</p>
+  </li>
+  <li>
+    <p>Triangulation</p>
   </li>
 </ol>
 
 <h3 id="the-np-problem">The NP-Problem</h3>
 
 <ol>
-  <li>
-    <p>The NP problem</p>
-  </li>
-  <li>
-    <p>Approximation Algorithms and Heuristics</p>
-  </li>
+  <li>Approximation Algorithms and Heuristics</li>
 </ol>
 
 <h3 id="probabilistic-algorithms">Probabilistic Algorithms</h3>
@@ -326,7 +383,7 @@
       </li>
     </ul>
 
-    <p><img src="/assets/algo_files/images/SkipList1.png" alt="Interface" height="55%" width="55%" /></p>
+    <p><img src="/assets/algo_files/images/SkipList1.png" alt="Interface" height="65%" width="65%" /></p>
   </li>
   <li>Locality Sensitive Hashing <a href="/assets/algo_files/08_1_Locality_Sensitive_Hashing.pdf">Slides</a>
     <ul>
@@ -343,7 +400,7 @@
       <li>Playing the probability game</li>
     </ul>
 
-    <p><img src="/assets/algo_files/images/Similarity.png" alt="Interface" height="35%" width="35%" /></p>
+    <p><img src="/assets/algo_files/images/Similarity.png" alt="Interface" height="55%" width="55%" /></p>
   </li>
   <li>
     <p>Membership Query - Bloom Filter</p>
